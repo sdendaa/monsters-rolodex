@@ -36,7 +36,12 @@ class App extends Component {
     });
     return (
       <div className="App">
-        <SearchBox onSearchChange={onSearchChange} />
+        <h1 className="app-title">Monsters Rolodex</h1>
+        <SearchBox
+          onSearchChange={onSearchChange}
+          placeholder="search monsters"
+          className="search-box"
+        />
         <CardListComponent monsters={filteredMonster} />
       </div>
     );
